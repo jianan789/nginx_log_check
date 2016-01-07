@@ -35,5 +35,5 @@ function exec_authcode_pro(){
 
 }
 </pre>
-4.运行
+4.运行 chmod +x nginx_log_check.sh
    ./nginx_log_check.sh
