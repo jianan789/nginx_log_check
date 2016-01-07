@@ -20,6 +20,20 @@ vi  nginx_log_check.sh <br>
 </pre>  
 
 3.业务处理配置
+<pre>
+在exec_authcode_pro 回调内调用会话管理程序，
+文件格式:
+"iWAGGMdCZ0/kQ3632Ho1vAoQ3uCUXhNQ3/+UaMGgm18=" 140
+"9cZrroMa2WFbjvXK0oJa30Uv0QhfFqmuvP1zxVImWOo=" 60
+"Ky71FSraIwicifzJYE0iZ79QrmEHOhS55nZXMThkCKM=" 38
 
+
+function exec_authcode_pro(){
+    echo "authcode file".$1
+    #call session manager
+    # java -jar  xx.jar  $1
+
+}
+</pre>
 4.运行
    ./nginx_log_check.sh
